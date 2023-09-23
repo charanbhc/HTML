@@ -1,0 +1,323 @@
+
+>web page is a portable web document that is suitable for the
+  world wide web and the web browser.
+>HTML(Hyper Text Markup Language) is the standard language 
+to create web pages.
+>HTML is a scripting language i.e. we can execute directly without considering 
+any errors.
+>HTML is case insensitive. Markup language is not same as programming language
+>HTML describes the structure of a webpage. HTML consists of series of elements.
+>There are two types of tags:
+                            1. single tag or empty tag
+                            2. starting and ending tag or non empty tag.
+>There are some parent and child relations between the tags:
+                           .we cannot open <head> without <html> tag
+                           .the recently opened tag will close first
+>Comments <!--comments--!>play a vital role in tracking errors or testing the code.
+>Attributes:eg:<tag attribute1="value" attribute2="value">.....</tag>
+  some of the attributes are id, name, class, etc.
+>If we don't use <!DOCTYPE> in the HTML code, the HTML code will become device dependent i.e. it can't 
+work the same way in mobile, laptop, tab, etc because the screen resolution may change from device to device.
+>Inorder to make the HTML code to become device independent use the following:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+>The reason for using html lang and UTF-8 is some characters in other languages might look similar to english characters.
+>head consists of meta data, body section consits of the original data.
+>    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  The above line measures the screen resolution before launching the webpage and opens  the web page accordingly
+>SEO(search engine optimization):If you follow the rules of SEO perfectly and use the keywords correctly
+your webpage has the highest chance of being top on the suggestions on the web searches for the user.
+>w3c validator is used to validate the HTML page, it gives errors which the same webpage might face in different types of devices, if we
+don't use meta tags.
+><!DOCTYPE> is not an HTML tag it's an instruction to the web browser about the version of HTML is being used.
+>Two types of HTML tags
+                      1.inline tags
+                      2.block tags
+>Headings:<h1>.......<h6>, h1 being largest heading.These are also block tags.
+>Block:<p>, <pre>, <address>, <blockquote>
+>Inline:<sub>, <sup>, <del>, <ims>,<code>, <i>, <strong>, <em>, <b>, <hr>, <big>, <cite>->citation i.e. accumulating information 
+from other source, <br>
+Block element always starts with new line where as inline elements goes on continuously.
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    <h3>Hello</h3>
+    <h4>Hello</h4>
+</body>
+</html>
+   The output will display h1 hello in one line and h2 hello in new line even if the space is availble in the current line and so on.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <strong>Hello</strong>
+    <em>Hello</em>
+    <strike>
+    <small>Hello</small></strike>
+</body>
+</html>
+   The output will be as follows Hello Hello and so on.
+>Lists:Three types
+     1.Ordered list
+     2.Unordered list
+     3.Description/Definition list
+>tags vs elements
+<a>->tag
+<a href="http://www.gkdss.com/">Click here</a>->Element
+<img> is used to load/link/refer an image into the webpage, we cannot add the image.
+<img src="img/picture.png" alt="alternate text"/>
+Using image as a hyperlink
+<a href="http://www.gkdss.com/">
+  <img src=""img/picture.png"/>
+</a>
+
+
+
+><img> is a inline tag, Inserts a graphical image into the page(online). The sec attribute
+specifies the image URL.HTML 5 supports a alt attribyte describing the image, if the
+browser is unable to work with image, the alternative text is displayed.
+>image is placed inside a anchor tag inorder to use image as a hyperlink.
+Other <img> tags are height and width=200(pixels).
+><a> attributes:
+      1.href elements must have a value that is a valid URL.
+      2.target if present, must be a valid browsing context name or keyword. It gives
+      the name of the browsing context that will be used.target is used if we want to 
+      open the URL in a new tab rather than the existing tab.target="_blank"
+      3.type the type attribute ,if present, gives the MIME type of the linked resources
+      The value must be a valid mime(multimedia)
+      4.download attribute authorizes download from the page.
+>target attribute:
+                _blank:opens the linked page in a new tab
+                _self:same tab
+                _parent:opens in parent frame
+                _top:opens in the full body of the frame
+                framename:opens in a named frame
+>URL(Uniform Resource Locator):
+Relative path:no need of internet                Absolute path:
+eg:index.html                                    eg:http://www.mysite.com 
+   /graphics/image.png                              http://www.mysite.com/graphics/image.png
+>Anchor element:
+   phone link:<a href="tel:+9133333333">+91333333333</a>
+   email link:<a href="mailto:emample@gmailcom">example@gmail.com</a>
+   skype link:<a href="skype:someone?call">someskype</a>
+       
+><table>:
+     It is used as a container for elements that define the contents of the table.
+     Each table row is defined with the <tr> tag. A table header is defined with the <th>
+     tag.
+     By default, table headings are bold and centered. Atable data/cell is defined with 
+      the <td>
+     .colspan attribute is used to combine neighboring columns in the Table.
+     .rowspan to combine rows.max 300 rows and cols
+     we can use only the follwing elements in a table:
+     <caption>,<col>,<colgroup>,<tbody>,<foot>,<th>,<tfoot>,<th>->(both can be used)
+      <thead> and <tr>
+     eg:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Table with thead,tfoot, and tbody </p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Header content 1</th>
+                <th>Header content 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>body content 1</td>
+                <td>body content 2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>footer content 1</td>
+                <td>footer content 2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+.The <colgroup> tag specifies a group of one or more columns in a table for formatting
+.<col> tag is useful for applying styles to entire columns, instead of repeating the
+styles for each cell, for each row.
+>Elements with no semantic meaning:
+  <div> is a block tag where as <span> is a inline tag.&nbsp is used to get spaces in 
+    HTML.&euro to get Euro symbol.&copy for copyright symbol.
+>SVG(scalar vector Graphic)supports multimedia content in HTML pages.
+>Section is a region in HTML page, it represents a generic document or application
+section. In this context, a section is a thematic grouping of content, typically with
+a header, possibly with a footer.eg:chapters in a book, a website home page can be
+split into different section including introduction, news items, contact information.
+>article:<article>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h4>
+                <a href="#comment" rel="bookmark">comment #2</a>
+            </h4>
+        </header>
+        <p>Pellenteque habitant morbi tristique semectus</p>
+    </article>
+</body>
+</html>
+>Nav:menu bar like thing in the header section nav with ul gives a menu.
+ Features specially added in HMTL5:
+
+
+>Semantic tags:
+     <article>, <section>, <mark>, <aside>, <nav>, <figure>, <figcaption>, <audio>,
+     <video>, <source>, <canvas>, <svg>->scalble vector graphics, <datalist>, <progress>
+>section:An area in a webpage is a section 
+     syntax:<section>
+               <h1>Lecel 1</h1>
+               <section>
+                  <h1>Level 2</h1>
+               </section>
+            </section>
+>nav:<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+      <a href="/html/">html</a>
+      <a href="/css/">CSS</a>
+      <a href="/js/">JavaScript</a>
+    </nav>
+</body>
+</html> This code displays  a menu.
+>aside:
+>main:It is used to use whole document as one file. It consists <body>, <footer>
+<main>, also has header information.
+>footer:It stores contact, copyright symbols etc.
+>figure,figcaption: figure may be a image, video. we can use figure for <img> and can
+provide caption to the image using <figcaption>
+eg:<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>figure and fig caption tags</h1>
+    <figure>
+        <img src="C:\Users\SRINIVAS\Desktop\GKDSS\20feb.jpg" alt="GKDSS" style="width:70%">
+         <figcaption>Fig.1.:GKDSS image</figcaption>
+    </figure>
+</body>
+</html>
+><mark>:it is used to highlight a portion of webpage with default yellow colour.
+eg:    <p>hello,<mark>GKDSS</mark></p>
+
+><audio>:It represents a sound or audio stream
+ eg:<audio src="music.oga" controls>
+      <a href="music.oga">Download song</a>
+    </audio>
+inorder to download the audio we need to enable download attribute to the audio tag.
+><video>:Similar to audio, it displays the video in the hyperlink.
+><svg> :used to draw figures,
+eg:<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg width="700" height="300">
+        <circle cx="150" cy="150" r="80" stroke="green" stroke-widht="4" fill="yellow"/>
+
+    </svg>
+</body>
+</html> the above code is used to draw a cicle.
+>form:A form is a webpage that allows a user to en ter data that is sent to a server for processing.A form is a area that can 
+contain form elemnts, text fields, radio buttons, drop-down menus, etc.
+syntax:<form>---form elements----</form>, A form contains  a submit button which is used to send the data to the server.
+>attributes of form tag:action, method, target.
+field set is used to set a box like structure to the login text field, and legend to define caption.
+
+>input tag arguments:
+     name: the name of the element
+     value:the value of the element; used in different ways
+     readonly:the value is only for reading
+>textarea:The text area represents multiline control for the elements'
+>Buttons:
+   submit button
+   reset button
+   plain button
+<form action="/actoin_page.php">
+first name:<br />
+<input type="text" name="firstname" value="Mickey"/>
+<input type="button" onclick="alert('Hello world')" value="click me"/>
+>checkboxes:Attributes->
+        type:"checkbox"
+        name:used for reference fof form element in javascript
+        value:value to be returned when element is checked.
+<input type="checkbox" name="vehicle1" value="Bike"/>I have a bike<br />
+<input type="checkbox" name="vehicle2" value="Car/>I have a car<br />
+<input type="checkbox" name="vehicle3" value="Boat"/>I have a boat<br />
+>radio buttons:name should be same
+   <input type="radio" name="sex" value="myValue1" checked/>Male<br />
+   <input type="radio" name="sex" value="myValue2"/>Female<br />
+>select box:
+<select>
+<tr>
+   <td> label for="fruit">fruit</label></td>
+   <td><select name="fruits">
+   <option value="banana">banana</option>
+   <option value="mango">mango</option>
+   <option value="apple"selected>apple</option>//in general the first item is selected in the menu but we can use selected attribute to select the necessary option.
+   <option value="watermelon">watermelon</option>
+</select>
+we can use multiple attribute in select inorder to select multiple options from selection menu.
+
+
+
+          
